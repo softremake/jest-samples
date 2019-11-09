@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "npm run build && npx jest",
-    "build": "rollup -c",
+    "build": "npx rollup -c",
     "prepublish": "npm run build"
   },
   "repository": {
