@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1 check all, no debug 1`] = `
+Array [
+  Object {
+    "example": "test 1",
+    "ln": "18",
+    "result": Object {
+      "result": "test 1",
+    },
+    "test": null,
+  },
+  Object {
+    "example": "test 2",
+    "ln": "19",
+    "result": Object {
+      "result": "test 2",
+    },
+    "test": null,
+  },
+]
+`;
+
+exports[`2 check all, debug 1`] = `
+"test 2 at 32
+output {
+  \\"result\\": \\"test 2\\"
+}
+"
+`;
+
+exports[`4 check every, debug 1`] = `
+"test 2 at 61
+test yes
+output \\"yes\\"
+"
+`;
+
+exports[`5 custom check, no debug 1`] = `
+Array [
+  "yes",
+  "yes",
+]
+`;

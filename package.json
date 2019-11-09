@@ -1,0 +1,41 @@
+{
+  "name": "jest-example",
+  "version": "0.1.0",
+  "description": "Samples testing for Jest",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "npm run build && npx jest",
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softremake/jest-samples.git"
+  },
+  "keywords": [
+    "jest",
+    "samples",
+    "test",
+    "each",
+    "snapshot"
+  ],
+  "author": "Softremake Technologies",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@types/jest": "^24.0.22",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+  }
+}
