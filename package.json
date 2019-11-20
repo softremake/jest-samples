@@ -1,5 +1,5 @@
 {
-  "name": "jest-example",
+  "name": "jest-samples",
   "version": "0.1.0",
   "description": "Samples testing for Jest",
   "main": "lib/index.js",

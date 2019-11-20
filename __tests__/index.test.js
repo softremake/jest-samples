@@ -45,7 +45,7 @@ test('3 check every, no debug', () => {
         .add(0, 'test 1', 'yes')
         .add(0, 'test 2', 'yes')
         .checkEach(
-            (sample, result, ln, check) => expect(result).toMatch(check),
+            (sample, result, ln, check) => expect(result).toMatch(check)
         )
 })
 
@@ -60,7 +60,7 @@ test('4 check every, debug', () => {
         .add(0, 'test 1', 'yes')
         .add(1, 'test 2', 'yes')
         .checkEach(
-            (sample, result, ln, check) => console.log('ERROR'),
+            (sample, result, ln, check) => console.log('ERROR')
         )
 
     expect(getLog()).toMatchSnapshot()
