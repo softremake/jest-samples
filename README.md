@@ -29,7 +29,9 @@ test('test jest-samples isolates', () => {
             return { result: ex }
         },
     )
-        .add(1, 'test 1') // we isolate by using 1 as a first parameter, in this case we don't use snapshots, but we log the output
+    /* we isolate by using 1 as a first parameter, in this case we don't use snapshots, 
+    but we log the output to the console, along with line numbers of a sample */
+        .add(1, 'test 1') 
         .add(0, 'test 2') 
         .checkAll((out) => expect(out).toMatchSnapshot())
 })
