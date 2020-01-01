@@ -7,6 +7,8 @@ Sometimes you want to test multiple variants with the same code and using Jest's
 Now you can do it by the code like this:
 
 ```
+import { samples } from 'jest-samples'
+
 test('test jest-samples', () => {
     samples(
         // this function is to provide an output, in this example we return { result: ex } object
